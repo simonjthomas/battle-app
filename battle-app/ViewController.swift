@@ -24,6 +24,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // @IBOutlets
+    @IBOutlet weak var textLbl: UILabel!
+    @IBOutlet weak var player1HPLbl: UILabel!
+    @IBOutlet weak var player2HPLbl: UILabel!
+    @IBOutlet weak var restartButton: UIButton!
+    @IBOutlet weak var player1AttackBtn: UIButton!
+    @IBOutlet weak var player2AttackBtn: UIButton!
+    
+    // @IBActions
+    @IBAction func restartBtnPressed(sender: UIButton) {
+    }
+    @IBAction func player1AttackBtnPressed(sender: UIButton) {
+    }
+    @IBAction func player2AttackBtnPressed(sender: UIButton) {
+    }
+    
 
 }
 

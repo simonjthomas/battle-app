@@ -83,6 +83,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
                                 <state key="normal" title="Attack" backgroundImage="player1attackbtn"/>
+                                <connections>
+                                    <action selector="player1AttackBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYV-L3-bOC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZC-fD-ZVO" userLabel="player2AttackBtn">
                                 <rect key="frame" x="396" y="35" width="135" height="47"/>
@@ -92,6 +95,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
                                 <state key="normal" title="Attack" backgroundImage="player2attackbtn"/>
+                                <connections>
+                                    <action selector="player2AttackBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vl-fd-02k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb0-bD-js2" userLabel="restartButton">
                                 <rect key="frame" x="233" y="211" width="235" height="82"/>
@@ -103,6 +109,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="21"/>
                                 <state key="normal" title="Restart" backgroundImage="player1attackbtn"/>
+                                <connections>
+                                    <action selector="restartBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7c-fP-rI2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -134,6 +143,14 @@
                             <constraint firstItem="bup-yQ-pIJ" firstAttribute="top" secondItem="xJw-8B-2V4" secondAttribute="bottom" id="xks-KI-FfL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="player1AttackBtn" destination="zB6-H0-5QW" id="93U-qW-fpJ"/>
+                        <outlet property="player1HPLbl" destination="wfO-t9-1yN" id="HdC-xH-eeL"/>
+                        <outlet property="player2AttackBtn" destination="dZC-fD-ZVO" id="UIA-Tm-tKE"/>
+                        <outlet property="player2HPLbl" destination="huy-I5-YjZ" id="c7o-L6-oVk"/>
+                        <outlet property="restartButton" destination="gb0-bD-js2" id="g8g-7j-J6T"/>
+                        <outlet property="textLbl" destination="zBP-a1-Zd5" id="Wvy-JU-Dkf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
