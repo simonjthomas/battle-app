@@ -10,7 +10,6 @@ import Foundation
 
 class Character {
     private var _hp = 100
-    private var _attackPwr = 20
     private var _name: String
     private var _player: Int
     private var _isAlive = true
@@ -20,10 +19,6 @@ class Character {
     // Getters
     var hp:Int {
         return _hp
-    }
-    
-    var attackPwr:Int {
-        return _attackPwr
     }
     
     var name: String {
@@ -52,9 +47,8 @@ class Character {
     }
     
     // Initialiser
-    init(_hp:Int,_attackPwr: Int, _name: String, _player: Int, _isAlive: Bool) {
+    init(_hp:Int = 100, _name: String, _player: Int, _isAlive: Bool) {
         self._hp = _hp
-        self._attackPwr = _attackPwr
         self._name = _name
         self._player = _player
         self._isAlive = _isAlive

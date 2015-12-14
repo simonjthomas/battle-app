@@ -10,13 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var player1: Character!
+    var player2: Character!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
             /*
-            Need to prompt users to choose character
             Generate both characters
             Construct UI
             */
+        
+        //  Instantiate Players
+        player1 = Character(_hp: 100, _name: "Orc", _player: 1, _isAlive: true)
+        player2 = Character(_hp: 100, _name: "Knight", _player: 2, _isAlive: true)
     }
 
     override func didReceiveMemoryWarning() {
