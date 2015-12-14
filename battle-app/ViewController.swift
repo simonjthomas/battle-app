@@ -48,25 +48,20 @@ class ViewController: UIViewController {
                 // Dead
                 endGame(1)
             }
-        
-        
     }
     
     @IBAction func player2AttackBtnPressed(sender: UIButton) {
         attackStrength = player2.attemptAttack(player1)
-        
-        
-            if player1.isAlive {
-                // Still Alive, Update label and freeze player 2
-                player1HPLbl.text = "\(player1.hp) HP"
-                player2AttackBtn.hidden = true
-                player1AttackBtn.hidden = false
-                textLbl.text = "Player 1 attacked with \(attackStrength)pts"
-            } else {
-                // Dead
-                endGame(2)
-            }
-        
+        if player1.isAlive {
+            // Still Alive, Update label and freeze player 2
+            player1HPLbl.text = "\(player1.hp) HP"
+            player2AttackBtn.hidden = true
+            player1AttackBtn.hidden = false
+            textLbl.text = "Player 1 attacked with \(attackStrength)pts"
+        } else {
+            // Dead
+            endGame(2)
+        }
     }
     
     // Functions
@@ -83,8 +78,8 @@ class ViewController: UIViewController {
     
     func restartGame() {
         //  Instantiate Players
-        player1 = Character(_hp: Int(arc4random_uniform(100)) + 50, _name: "Orc", _player: 1, _isAlive: true)
-        player2 = Character(_hp: Int(arc4random_uniform(100)) + 50, _name: "Knight", _player: 2, _isAlive: true)
+        player1 = Character(_hp: generateHealth(), _name: "Orc", _player: 1, _isAlive: true)
+        player2 = Character(_hp: generateHealth(), _name: "Knight", _player: 2, _isAlive: true)
         
         // Set up UI
         textLbl.text = "Attack!"
@@ -97,6 +92,11 @@ class ViewController: UIViewController {
         player1HPLbl.text = "\(player1.hp) HP"
         player2HPLbl.text = "\(player2.hp) HP"
         
+    }
+    
+    func generateHealth() -> Int {
+        let attackPower: Int = Int(arc4random_uniform(100)) + 50
+        return attackPower
     }
 
 }

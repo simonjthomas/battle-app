@@ -56,8 +56,8 @@ class Character {
     
     func attemptAttack(playerToAttack: Character) -> Int {
         // Generate random attack pwr
-        var attackPwr = Int(arc4random_uniform(25))
-        
+        let attackPwr = Int(arc4random_uniform(50))
+        // Call method on player being attacked
         playerToAttack.loseHP(attackPwr)
         
         return attackPwr
