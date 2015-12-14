@@ -27,16 +27,111 @@
                                     <constraint firstAttribute="height" constant="64" id="gKj-0d-EkC"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="LbM-CU-sK8">
+                                <rect key="frame" x="145" y="544" width="311" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="i7C-pF-CYI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="knight" translatesAutoresizingMaskIntoConstraints="NO" id="xJw-8B-2V4">
+                                <rect key="frame" x="396" y="348" width="175" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="1iD-9W-Gqs"/>
+                                    <constraint firstAttribute="width" constant="175" id="iVV-BV-dcy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orc" translatesAutoresizingMaskIntoConstraints="NO" id="vAr-fN-icn">
+                                <rect key="frame" x="11" y="348" width="175" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="188" id="1bX-b1-l7M"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="7ij-me-v9v"/>
+                                    <constraint firstAttribute="height" constant="188" id="EDh-Uc-dYw"/>
+                                    <constraint firstAttribute="width" constant="175" id="S8x-8G-FRq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Knight Attacked with 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBP-a1-Zd5" userLabel="textLbl">
+                                <rect key="frame" x="154" y="557" width="292" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfO-t9-1yN" userLabel="player1HPLbl">
+                                <rect key="frame" x="173" y="488" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0sR-XC-hld"/>
+                                    <constraint firstAttribute="width" constant="70" id="o36-WA-kWz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huy-I5-YjZ" userLabel="player2HPLbl">
+                                <rect key="frame" x="360" y="488" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0Af-oA-s1s"/>
+                                    <constraint firstAttribute="width" constant="70" id="U4W-Px-0Zb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB6-H0-5QW" userLabel="player1AttackBtn">
+                                <rect key="frame" x="116" y="35" width="135" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="1O2-5a-42E"/>
+                                    <constraint firstAttribute="height" constant="47" id="tsN-kk-QiT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                <state key="normal" title="Attack" backgroundImage="player1attackbtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZC-fD-ZVO" userLabel="player2AttackBtn">
+                                <rect key="frame" x="396" y="35" width="135" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="697-eK-LeH"/>
+                                    <constraint firstAttribute="height" constant="47" id="HIR-fJ-eEl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                <state key="normal" title="Attack" backgroundImage="player2attackbtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb0-bD-js2" userLabel="restartButton">
+                                <rect key="frame" x="233" y="211" width="235" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="82" id="8uA-uv-Fqt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="ANn-8O-zTS"/>
+                                    <constraint firstAttribute="width" constant="135" id="RaW-js-pgt"/>
+                                    <constraint firstAttribute="height" constant="47" id="VOE-3u-g87"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="21"/>
+                                <state key="normal" title="Restart" backgroundImage="player1attackbtn"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="LgM-W2-EhD" secondAttribute="trailing" constant="-20" id="0Mp-Tn-LtD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LbM-CU-sK8" secondAttribute="bottom" constant="9" id="0Yp-3K-p1A"/>
+                            <constraint firstItem="dZC-fD-ZVO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="3ms-gW-4QZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dZC-fD-ZVO" secondAttribute="trailing" constant="96" id="53o-AR-QU0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xJw-8B-2V4" secondAttribute="trailing" constant="9" id="6Mp-vG-AaL"/>
+                            <constraint firstItem="bup-yQ-pIJ" firstAttribute="top" secondItem="huy-I5-YjZ" secondAttribute="bottom" constant="27" id="7Rv-wn-79l"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bup-yQ-pIJ" secondAttribute="trailing" constant="-20" id="9Je-4K-6xG"/>
+                            <constraint firstItem="vAr-fN-icn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="IPH-8P-n6X"/>
+                            <constraint firstItem="gb0-bD-js2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K4F-lM-E3P"/>
                             <constraint firstItem="LgM-W2-EhD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="LEx-Kg-NA8"/>
+                            <constraint firstItem="zB6-H0-5QW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="LX4-MT-3vi"/>
+                            <constraint firstItem="wfO-t9-1yN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="153" id="MeG-Ad-fcd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LgM-W2-EhD" secondAttribute="bottom" id="Nc0-lc-pXl"/>
                             <constraint firstItem="LgM-W2-EhD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ONF-ds-pkL"/>
+                            <constraint firstItem="LbM-CU-sK8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R3p-UF-ifs"/>
+                            <constraint firstItem="zBP-a1-Zd5" firstAttribute="centerX" secondItem="LbM-CU-sK8" secondAttribute="centerX" id="R60-R5-zx0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="huy-I5-YjZ" secondAttribute="trailing" constant="150" id="S3r-bi-f2t"/>
+                            <constraint firstItem="zBP-a1-Zd5" firstAttribute="centerY" secondItem="LbM-CU-sK8" secondAttribute="centerY" id="TST-ng-Fgu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bup-yQ-pIJ" secondAttribute="bottom" id="URF-3L-pgE"/>
+                            <constraint firstItem="gb0-bD-js2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a1l-jA-MwQ"/>
+                            <constraint firstItem="bup-yQ-pIJ" firstAttribute="top" secondItem="wfO-t9-1yN" secondAttribute="bottom" constant="27" id="iO6-mk-Jbu"/>
+                            <constraint firstItem="zB6-H0-5QW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="kXY-nq-pAg"/>
                             <constraint firstItem="bup-yQ-pIJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="keh-CB-XuE"/>
+                            <constraint firstItem="bup-yQ-pIJ" firstAttribute="top" secondItem="vAr-fN-icn" secondAttribute="bottom" id="ndX-ED-hYY"/>
+                            <constraint firstItem="bup-yQ-pIJ" firstAttribute="top" secondItem="xJw-8B-2V4" secondAttribute="bottom" id="xks-KI-FfL"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -48,5 +143,10 @@
     <resources>
         <image name="bg" width="1024" height="677"/>
         <image name="ground" width="1024" height="106"/>
+        <image name="knight" width="406" height="441"/>
+        <image name="orc" width="241" height="348"/>
+        <image name="player1attackbtn" width="212" height="78"/>
+        <image name="player2attackbtn" width="212" height="78"/>
+        <image name="text-holder" width="696" height="106"/>
     </resources>
 </document>
