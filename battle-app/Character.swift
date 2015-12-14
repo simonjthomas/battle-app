@@ -15,7 +15,6 @@ class Character {
     private var _isAlive = true
     private var _type = "String"
     private var _startingHP = 100
-    //private var _playerToAttack: Character?
     
     // Getters
     var hp:Int {
@@ -53,17 +52,15 @@ class Character {
         self._name = _name
         self._player = _player
         self._isAlive = _isAlive
-        //self._playerToAttack = _playerToAttack
-        
     }
     
-    func attemptAttack(playerToAttack: Character) -> Bool {
+    func attemptAttack(playerToAttack: Character) -> Int {
         // Generate random attack pwr
-        var attackPwr = 25
+        var attackPwr = Int(arc4random_uniform(25))
         
         playerToAttack.loseHP(attackPwr)
         
-        return true
+        return attackPwr
     }
     
     func loseHP(attackPwr: Int) -> Bool {

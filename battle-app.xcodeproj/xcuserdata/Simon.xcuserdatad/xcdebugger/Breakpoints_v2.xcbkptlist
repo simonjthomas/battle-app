@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "battle-app/Character.swift"
-            timestampString = "471803926.181802"
+            timestampString = "471805397.823022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "attemptAttack(_:)"
             landmarkType = "5">
          </BreakpointContent>
