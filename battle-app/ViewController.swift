@@ -15,14 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            /*
-            Generate both characters
-            Construct UI
-            */
-        
-        //  Instantiate Players
-        player1 = Character(_hp: 100, _name: "Orc", _player: 1, _isAlive: true)
-        player2 = Character(_hp: 100, _name: "Knight", _player: 2, _isAlive: true)
+            restartGame()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,12 +33,65 @@ class ViewController: UIViewController {
     
     // @IBActions
     @IBAction func restartBtnPressed(sender: UIButton) {
+        restartGame()
     }
     @IBAction func player1AttackBtnPressed(sender: UIButton) {
-    }
-    @IBAction func player2AttackBtnPressed(sender: UIButton) {
+        if player1.attemptAttack(player2) {
+            if player2.isAlive {
+                // Still Alive, Update label and freeze player 1
+                player2HPLbl.text = "\(player2.hp) HP"
+                player1AttackBtn.hidden = true
+                player2AttackBtn.hidden = false
+            } else {
+                // Dead
+                endGame(1)
+            }
+        }
+        
     }
     
+    @IBAction func player2AttackBtnPressed(sender: UIButton) {
+        if player2.attemptAttack(player1) {
+            if player1.isAlive {
+                // Still Alive, Update label and freeze player 2
+                player1HPLbl.text = "\(player1.hp) HP"
+                player2AttackBtn.hidden = true
+                player1AttackBtn.hidden = false
+            } else {
+                // Dead
+                endGame(2)
+            }
+        }
+    }
+    
+    func endGame(winner: Int) {
+        player1AttackBtn.hidden = true
+        player2AttackBtn.hidden = true
+        player1HPLbl.hidden = true
+        player2HPLbl.hidden = true
+        // Update Text
+        textLbl.text = "Player \(winner) Wins. Congratulations"
+        restartButton.hidden = false
+        
+    }
+    
+    func restartGame() {
+        //  Instantiate Players
+        player1 = Character(_hp: 100, _name: "Orc", _player: 1, _isAlive: true)
+        player2 = Character(_hp: 100, _name: "Knight", _player: 2, _isAlive: true)
+        
+        // Set up UI
+        textLbl.text = "Attack!"
+        restartButton.hidden = true
+        player1AttackBtn.hidden = false
+        player2AttackBtn.hidden = false
+        player1HPLbl.hidden = false
+        player2HPLbl.hidden = false
+        
+        player1HPLbl.text = "\(player1.hp) HP"
+        player2HPLbl.text = "\(player2.hp) HP"
+        
+    }
 
 }
 
