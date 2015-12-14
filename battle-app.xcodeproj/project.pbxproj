@@ -12,6 +12,8 @@
 		F4B169491C1E3C76003C7551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B169471C1E3C76003C7551 /* Main.storyboard */; };
 		F4B1694B1C1E3C76003C7551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B1694A1C1E3C76003C7551 /* Assets.xcassets */; };
 		F4B1694E1C1E3C76003C7551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B1694C1C1E3C76003C7551 /* LaunchScreen.storyboard */; };
+		F4B169561C1E3CBF003C7551 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B169551C1E3CBF003C7551 /* Character.swift */; };
+		F4B169581C1E4443003C7551 /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B169571C1E4443003C7551 /* Knight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F4B1694A1C1E3C76003C7551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4B1694D1C1E3C76003C7551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4B1694F1C1E3C76003C7551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B169551C1E3CBF003C7551 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		F4B169571C1E4443003C7551 /* Knight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				F4B1694A1C1E3C76003C7551 /* Assets.xcassets */,
 				F4B1694C1C1E3C76003C7551 /* LaunchScreen.storyboard */,
 				F4B1694F1C1E3C76003C7551 /* Info.plist */,
+				F4B169551C1E3CBF003C7551 /* Character.swift */,
+				F4B169571C1E4443003C7551 /* Knight.swift */,
 			);
 			path = "battle-app";
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B169581C1E4443003C7551 /* Knight.swift in Sources */,
+				F4B169561C1E3CBF003C7551 /* Character.swift in Sources */,
 				F4B169461C1E3C76003C7551 /* ViewController.swift in Sources */,
 				F4B169441C1E3C76003C7551 /* AppDelegate.swift in Sources */,
 			);
